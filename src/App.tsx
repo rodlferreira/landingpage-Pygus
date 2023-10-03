@@ -2,6 +2,7 @@ import './App.css'
 import logo from '/logo.svg';
 import grande from '/pinguimGrande.svg';
 import fundo from '/fundo.svg';
+import mere from '/mere.jpeg';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <div className='header'>
           <img src={logo} className='logo' />
           <p className='menu'>
-            <a className='item'>Home</a>
+            <a href="#section1" className='item'>Quem Somos</a>
             <a className='item'>Saiba mais</a>
             <a className='item'>Contato</a>
           </p>
@@ -19,13 +20,10 @@ function App() {
         <div className='subHeader'>
           <div className='texto'>
             <h2 className='intro'>PYGUS aplicativo para o tratamento de crianças com desvio fonológico </h2>
-            <span className='sub'>O aplicativo foi desenvolvido para o tratamento de crianças com
-              desvio fonológico (DF) é um recurso com pistas auditivas e visuais
-              que propicia a percepção do fonema trabalhado na estrutura da palavra.
-              Isso facilita o entendimento do momento em que deve ser articulado o
-              fonema instalado. Além disso, propõem-se um modelo autoexplicativo
-              (sombras das sílabas) nas lacunas a serem preenchidas favorecendo a
-              execução da atividade e a familiarização com a relação grafema-fonema.</span>
+            <span className='sub'>Pygus é um aplicativo desenvolvido para auxiliar o fonoaudiólogo no
+              tratamento de desvio fonológico. O App proporciona um ambiente lúdico e dinâmico para que
+              a criança automatize o fonema instalado. Tudo isso com o auxílio do nosso querido pinguim,
+              o “Pygus”. </span>
             <div className='divButton'>
               <button className='quemSomos'>Quem somos</button>
             </div>
@@ -36,24 +34,25 @@ function App() {
         </div>
       </div>
       <div className='middle'>
-        <div className='diferencial'>
-          <span className='titulo'>Diferencial</span>
-          <span className='subTitulo'>O que o diferencia
-            em relação aos existentes no mercado é o estímulo
-            visual com cor e brilho no momento da produção
-            do som alvo e uma voz infantil como pista auditiva,
-            além da não aceitação da sílaba na lacuna que não
-            corresponde.</span>
+        <div id="section1" className='diferencial'>
+          {/* <span className='titulo'>Diferencial</span> */}
+          <span className='subTitulo'>Pygus é uma startup que surgiu a
+            partir do desejo de popularizar o acesso ao tratamento de desvio
+            fonológico e facilitar o trabalho dos fonoaudiólogos no acompanhamento
+            de seus clientes. A empresa tem como missão oferecer recursos
+            tecnológicos que atendam às necessidades de
+            profissionais de saúde na relação com seus clientes.
+            O App Pygus foi desenvolvido a partir da dissertação de mestrado
+            da fonoaudióloga Mére Lander Moura Lins, uma das sócias da empresa. Os bons
+            resultados obtidos na pesquisa fundamentaram a construção dos recursos oferecidos
+            no aplicativo. Tudo pensado com base em ciência e tecnologia.</span>
         </div>
 
         <div className='beneficios'>
-          <span className='titulo1'>Benefícios</span>
-          <span className='subTitulo1'>Traz benefícios
-            como: manter a prática de terapia fora do
-            ambiente de consultório; automatizar o fonema
-            instalado pelo fonoaudiólogo por meio da
-            consciência fonológica;e intensificar o
-            processo terapêutico e de aprendizagem.</span>
+          <span className='titulo1'>Os Sócios</span>
+          <div className='mere'>
+            <img className='mereFoto' src={mere} />
+          </div>
         </div>
       </div>
 
@@ -62,10 +61,12 @@ function App() {
 
         <div className='divyoutube'>
           <iframe width="650" height="320"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+            src="https://www.youtube.com/watch?v=SfBnwQv5XfY">
           </iframe>
         </div>
-
+        <div className='contato'>
+          <span className='contatoNome'>Mere Lander</span>
+        </div>
       </div>
     </>
   )
