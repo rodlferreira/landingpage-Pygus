@@ -2,6 +2,7 @@ import './App.css'
 import logo from '/logo.svg';
 import grande from '/pinguimGrande.svg';
 import fundo from '/fundo.svg';
+import membros from '/membros.jpeg';
 
 function App() {
   return (
@@ -11,21 +12,18 @@ function App() {
         <div className='header'>
           <img src={logo} className='logo' />
           <p className='menu'>
-            <a className='item'>Home</a>
-            <a className='item'>Saiba mais</a>
-            <a className='item'>Contato</a>
+            <a href="#section1" className='item'>Quem Somos</a>
+            <a href="#section2" className='item'>Saiba mais</a>
+            <a href="#section3" className='item'>Contato</a>
           </p>
         </div>
         <div className='subHeader'>
           <div className='texto'>
             <h2 className='intro'>PYGUS aplicativo para o tratamento de crianças com desvio fonológico </h2>
-            <span className='sub'>O aplicativo foi desenvolvido para o tratamento de crianças com
-              desvio fonológico (DF) é um recurso com pistas auditivas e visuais
-              que propicia a percepção do fonema trabalhado na estrutura da palavra.
-              Isso facilita o entendimento do momento em que deve ser articulado o
-              fonema instalado. Além disso, propõem-se um modelo autoexplicativo
-              (sombras das sílabas) nas lacunas a serem preenchidas favorecendo a
-              execução da atividade e a familiarização com a relação grafema-fonema.</span>
+            <span className='sub'>Pygus é um aplicativo desenvolvido para auxiliar o fonoaudiólogo no
+              tratamento de desvio fonológico. O App proporciona um ambiente lúdico e dinâmico para que
+              a criança automatize o fonema instalado. Tudo isso com o auxílio do nosso querido pinguim,
+              o “Pygus”. </span>
             <div className='divButton'>
               <button className='quemSomos'>Quem somos</button>
             </div>
@@ -36,24 +34,25 @@ function App() {
         </div>
       </div>
       <div className='middle'>
-        <div className='diferencial'>
-          <span className='titulo'>Diferencial</span>
-          <span className='subTitulo'>O que o diferencia
-            em relação aos existentes no mercado é o estímulo
-            visual com cor e brilho no momento da produção
-            do som alvo e uma voz infantil como pista auditiva,
-            além da não aceitação da sílaba na lacuna que não
-            corresponde.</span>
+        <div id="section1" className='diferencial'>
+          {/* <span className='titulo'>Diferencial</span> */}
+          <span className='subTitulo'>Pygus é uma startup que surgiu a
+            partir do desejo de popularizar o acesso ao tratamento de desvio
+            fonológico e facilitar o trabalho dos fonoaudiólogos no acompanhamento
+            de seus clientes. A empresa tem como missão oferecer recursos
+            tecnológicos que atendam às necessidades de
+            profissionais de saúde na relação com seus clientes.
+            O App Pygus foi desenvolvido a partir da dissertação de mestrado
+            da fonoaudióloga Mére Lander Moura Lins, uma das sócias da empresa. Os bons
+            resultados obtidos na pesquisa fundamentaram a construção dos recursos oferecidos
+            no aplicativo. Tudo pensado com base em ciência e tecnologia.</span>
         </div>
 
         <div className='beneficios'>
-          <span className='titulo1'>Benefícios</span>
-          <span className='subTitulo1'>Traz benefícios
-            como: manter a prática de terapia fora do
-            ambiente de consultório; automatizar o fonema
-            instalado pelo fonoaudiólogo por meio da
-            consciência fonológica;e intensificar o
-            processo terapêutico e de aprendizagem.</span>
+          <span className='titulo1'>Os Sócios :</span>
+          <div className='mere'>
+            <img className='mereFoto' src={membros} />
+          </div>
         </div>
       </div>
 
@@ -61,11 +60,21 @@ function App() {
         <span className='venhaConhecer'>Venha conhecer nosso aplicativo!</span>
 
         <div className='divyoutube'>
-          <iframe width="650" height="320"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+          {/* <iframe width="650" height="320"
+            src="https://www.youtube.com/watch?v=SfBnwQv5XfY">
+          </iframe> */}
+          <iframe id="section2" width="560" height="315" src="https://www.youtube.com/embed/SfBnwQv5XfY?si=Pq3JgoEEsxfnV18-"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
           </iframe>
         </div>
+        <div id="section3" className='contato'>
+          <a href="https://instagram.com/merelander?igshid=MzRlODBiNWFlZA==" className='contatoNome'>Mere Lander</a>
+          <a href="https://instagram.com/lucianacostamelo?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" className='contatoNome'>Luciana Melo</a>
+          <a href="https://instagram.com/samuelcavalcantes?igshid=MzRlODBiNWFlZA==" className='contatoNome'>Samuel Cavalcante</a>
+          <a href="https://instagram.com/rodlferreira_java?igshid=MzMyNGUyNmU2YQ==" className='contatoNome'>Rodrigo Ferreira</a>
 
+        </div>
       </div>
     </>
   )
