@@ -19,7 +19,6 @@ function App() {
         </div>
         <div className='subHeader'>
           <div className='texto'>
-            <h2 className='intro'>PYGUS aplicativo para o tratamento de crianças com desvio fonológico </h2>
             <span className='sub'>Pygus é um aplicativo desenvolvido para auxiliar o fonoaudiólogo no
               tratamento de desvio fonológico. O App proporciona um ambiente lúdico e dinâmico para que
               a criança automatize o fonema instalado. Tudo isso com o auxílio do nosso querido pinguim,
