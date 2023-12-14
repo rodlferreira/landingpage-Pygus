@@ -62,7 +62,7 @@ function App() {
           {/* <iframe width="650" height="320"
             src="https://www.youtube.com/watch?v=SfBnwQv5XfY">
           </iframe> */}
-          <iframe id="section2" width="560" height="315" src="https://www.youtube.com/embed/SfBnwQv5XfY?si=Pq3JgoEEsxfnV18-"
+          <iframe id="section2" width="560" height="315" src="https://www.youtube.com/embed/_A0y9r6o1QQ"
             title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen>
           </iframe>
